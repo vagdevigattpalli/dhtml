@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>functions</title>
+</head>
+<body>
+<h1>TABLE</h1>
+<table id="table" align="center" border="1px solid black";>
+<tr>
+<th>Subjects</th>
+<th>Marks</th>
+</tr>
+<tr>
+<td>MPI</td>
+<td>81</td>
+</tr>
+<tr>
+<td>AI</td>
+<td>74</td>
+</tr>
+<tr>
+<td>CN</td>
+<td>97</td>
+</tr>
+<tr>
+<td>SUP</td>
+<td>84</td>
+</tr>
+<tr>
+<td>DMT</td>
+<td>87</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>98</td>
+</tr>
+<tr>
+    <td>total</td>
+
+ <td><p id="t"></p>
+	<script>
+	function t2(x,y,z,a,b,c){
+  
+ return a+b+c+x+y+z;
+}
+document.getElementById("t").innerHTML =t2(84,90,95,94,96,97); 
+	</script>
+	</td>
+	</tr>
+  <tr>
+<td>AVG</td>
+<td><p id="p"></p>
+<script>
+function s(x,y,z,a,b,c)
+{
+	return (x+y+z+a+b+c)/6;
+}
+document.getElementById("p").innerHTML =s(84,90,95,94,96,97); 
+</script>
+</td>
+</tr>
+</table>
+</body>
+</html>
