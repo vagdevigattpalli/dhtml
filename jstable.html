@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Marks</title>
+<style>
+table{
+border:3px solid#CCC
+}
+table td,table th{
+padding:5px;
+border:1px solid #CCC
+}
+table th{
+padding:10px;
+}
+</style>
+</head>
+<body>
+<table border="0" border-width="0" border-collapse="collapse">
+<tr>
+<th>
+wt
+</th>
+<td>
+90
+</td>
+</tr>
+<tr>
+<th>oops</th>
+<td>91</td></tr>
+<tr>
+<th>c</th>
+<td>94</td></tr>
+<tr>
+<th>cn</th>
+<td>99</td></tr>
+<tr>
+<td>total</td>
+<td><p id="v"></p>
+<script>
+{
+	var z=90+91+94+99;
+	document.getElementById("v").innerHTML = z;
+}
+</script>
+</td>
+<tr>
+<td>average</td>
+<td><p id="p"></p>
+<script>
+document.getElementById("p").innerHTML = z/4;
+</script>
+</tr>
+</td>
+</table>
+</body>
+</html>
