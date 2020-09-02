@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<title>form</title>
+<body>
+<h2>This is the registration site</h2>
+<form>
+Name:<input type="text" id="Name"/>
+<input type="button" value="submit" onclick="Val()"/>
+<p>your registration is saved</p>
+</body>
+<script type="text/javascript">
+    function Val() {
+        var letter =  /^[A-Za-z]+$/;
+        var isValid = letter.test(document.getElementById("Name").value);
+        if (!isValid) {
+            alert("Only Alphabets are allowed in Name.");
+        }
+
+        return isValid;
+    }
+</script>
+</form>
+</html>
