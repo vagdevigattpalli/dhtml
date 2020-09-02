@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>validation</title>
+</head>
+<body>
+<h2>Validations</h2>
+<form>
+<fieldset>
+<legend>personal</legend>
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname" value="vagdevi"><br>
+<label for="ph">Number:</label><br>
+<input type="number" id="ph" name="number" max="10">
+<h3>choice of course</h3>
+<input type="radio" id="Batchelors" name="btech" value="Batchelors">
+<label for="Batchelors">Batchelors</label><br>
+<input type="radio" id="Masters" name="mtech" value="Masters">
+<label for="Masters">Masters</label><br>
+<h3>Description</h3>
+<textarea name="description" rows="5" cols="10">this is my data..</textarea><br>
+<h3>subjects of interest</h3>
+<input type="checkbox" id="sub" value="DAA">
+<label for="sub">DAA</label><br>
+<input type="checkbox" id="sub" value="JAVA">
+<label for="sub">JAVA</label><br>
+<input type="checkbox" id="sub" value="COA">
+<label for="sub">COA</label><br>
+<p>these are my details</p>
+<input type="submit" value="submit" onclick="Val()"/>
+</fieldset>
+</form>
+<script>
+    function Val() {
+        var letter =  /^[0-9]+$/;
+        var isValid = letter.test(document.getElementById("ph").value);
+        if (!isValid) {
+            alert("Should contain only numbers");
+        }
+    var checkboxs=document.getElementsByName("sub");
+    var okay=false;
+    for(var i=0,l=checkboxs.length;i<l;i++)
+    {
+        if(checkboxs[i].checked)
+        {
+            okay=true;
+            break;
+        }
+    }
+    if(okay){
+}
+    else alert("Please check a checkbox");
+}
+</script>
+</body>
+</html>
