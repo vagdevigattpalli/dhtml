@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>The index starts from '0'...</p>
+<button onclick = "myFunction()">Word</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+	var str = "Hypertext Markup Language(HTML) is the standard language for webpages...with HTML you can create your own website";
+	var arr = str.split(" ");
+	document.getElementById("demo").innerHTML = arr[4]+"</br>"+arr[6]+"</br>"+arr[9]+"</br>";
+}
+</script>
+</body>
+</html>
