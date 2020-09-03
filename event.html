@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<title>Events</title>
+</head>
+<body onclick="myFunction(event)">
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="1" src="mb.jpg" alt="mahesh" width="500" height="400">
+
+<button onclick="this.innerHTML=Date()">Date</button>
+<p><strong>Note:</strong> The target property returns the element that triggered the event, and not necessarily the eventlistener's element.</p>
+<p>The designMode property sets whether the document is editable or not.</p>
+
+<p>This document is editable!</p>
+
+<p>Try editing any text inside this document.</p>
+
+<script>
+function bigImg(x) {
+  x.style.height = "200px";
+  x.style.width = "200px";
+}
+
+function normalImg(x) {
+  x.style.height = "100px";
+  x.style.width = "100px";
+}
+function myFunction(event) { 
+  alert(event.target.nodeName);
+}
+document.designMode = "on";
+</script>
+</body>
+</html>
