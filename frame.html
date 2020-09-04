@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+    <title> 
+        Hide or show HTML elements
+    </title> 
+
+    <style> 
+            .chinni { 
+             display: block;
+              margin-left: auto;
+              margin-right: auto;
+         width: 50%; 
+    </style> 
+</head> 
+
+<body> 
+<center>
+        <div class="chinni"> 
+<h1>Here is the SERC </h1>
+        </div> 
+
+        <p> 
+            Click the buttons to show 
+            or hide
+        </p> 
+
+        <button onclick="showElement()"> 
+            Show
+        </button> 
+
+        <button onclick="hideElement()"> 
+            Hide 
+        </button> 
+</center>
+
+    <script type="text/javascript"> 
+        function showElement() { 
+            element = document.querySelector('.chinni'); 
+            element.style.visibility = 'visible'; 
+        } 
+
+        function hideElement() { 
+            element = document.querySelector('.chinni'); 
+            element.style.visibility = 'hidden'; 
+        } 
+    </script> 
+</body> 
+
+</html>
